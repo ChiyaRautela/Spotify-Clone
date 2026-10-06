@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spotify - Your favourite music is here</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<nav>
+<ul>
+<li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+</ul>
+</nav>
+
+<div class="container">
+<div class="songList">
+<h1>Best of Taylor Swift - Swifties Edition</h1>
+<div class="songItemContainer">
+
+<div class="songItem">
+<img src="covers/1.png" alt="The Fate of Ophelia">
+<span class="songName">The Fate of Ophelia</span>
+<span class="songlistplay"><span class="timestamp">04:01 <i id="0" class="fa-solid fa-circle-play songItemPlay"></i></span></span>
+</div>
+
+<div class="songItem">
+<img src="covers/2.png" alt="Cruel Summer">
+<span class="songName">Cruel Summer</span>
+<span class="songlistplay"><span class="timestamp">02:58 <i id="1" class="fa-solid fa-circle-play songItemPlay"></i></span></span>
+</div>
+
+<div class="songItem">
+<img src="covers/3.png" alt="Style">
+<span class="songName">Style</span>
+<span class="songlistplay"><span class="timestamp">03:51 <i id="2" class="fa-solid fa-circle-play songItemPlay"></i></span></span>
+</div>
+
+<div class="songItem">
+<img src="covers/4.png" alt="Speak Now">
+<span class="songName">Speak Now</span>
+<span class="songlistplay"><span class="timestamp">04:00 <i id="3" class="fa-solid fa-circle-play songItemPlay"></i></span></span>
+</div>
+
+<div class="songItem">
+<img src="covers/5.png" alt="Begin Again">
+<span class="songName">Begin Again</span>
+<span class="songlistplay"><span class="timestamp">03:57 <i id="4" class="fa-solid fa-circle-play songItemPlay"></i></span></span>
+</div>
+
+<div class="songItem">
+<img src="covers/6.png" alt="Timeless">
+<span class="songName">Timeless (Taylor's Version)</span>
+<span class="songlistplay"><span class="timestamp">03:58 <i id="5" class="fa-solid fa-circle-play songItemPlay"></i></span></span>
+</div>
+
+<div class="songItem">
+<img src="covers/7.jpg" alt="If This Was A Movie">
+<span class="songName">If This Was A Movie</span>
+<span class="songlistplay"><span class="timestamp">03:55 <i id="6" class="fa-solid fa-circle-play songItemPlay"></i></span></span>
+</div>
+
+<div class="songItem">
+<img src="covers/8.png" alt="Red">
+<span class="songName">Red</span>
+<span class="songlistplay"><span class="timestamp">03:43 <i id="7" class="fa-solid fa-circle-play songItemPlay"></i></span></span>
+</div>
+
+<div class="songItem">
+<img src="covers/9.png" alt="Clean">
+<span class="songName">Clean</span>
+<span class="songlistplay"><span class="timestamp">04:31 <i id="8" class="fa-solid fa-circle-play songItemPlay"></i></span></span>
+</div>
+
+<div class="songItem">
+<img src="covers/10.png" alt="The Other Side of the Door">
+<span class="songName">The Other Side of the Door</span>
+<span class="songlistplay"><span class="timestamp">04:03 <i id="9" class="fa-solid fa-circle-play songItemPlay"></i></span></span>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="bottom">
+<input type="range" id="myProgressBar" min="0" value="0" max="100">
+<div class="icons">
+<i class="fa-solid fa-backward" id="previous"></i>
+<i class="fa-solid fa-circle-play" id="masterPlay"></i>
+<i class="fa-solid fa-forward" id="next"></i>
+</div>
+<div class="songInfo">
+<img src="playing.gif" width="42px" alt="Playing" id="gif">
+<span id="masterSongName">The Fate of Ophelia</span>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

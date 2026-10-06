@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+padding:0;
+min-height:100vh;
+background-image:url("taylor.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+font-family:'Varela Round',sans-serif;
+
+}
+
+nav{
+font-family:'Ubuntu',sans-serif;
+}
+
+nav ul{
+display:flex;
+align-items:center;
+list-style-type:none;
+height:65px;
+background-color:black;
+color:white;
+padding-left:20px;
+}
+
+nav ul li{
+padding:0 12px;
+cursor:pointer;
+}
+
+.brand{
+display:flex;
+align-items:center;
+font-weight:bolder;
+font-size:1.3rem;
+margin-right:15px;
+}
+
+.brand img{
+width:44px;
+padding:0 8px;
+}
+
+.container{
+min-height:72vh;
+background:rgba(0,0,0,0.88);
+color:white;
+display:flex;
+margin:23px 0 23px 4%;
+width:55%;
+border-radius:12px;
+padding:34px;
+position:relative;
+overflow:hidden;
+}
+.songList{
+width:100%;
+position:relative;
+z-index:2;
+}
+
+.songList h1{
+font-family:'Varela Round',sans-serif;
+font-size:28px;
+margin-bottom:20px;
+}
+
+.songItemContainer{
+margin-top:35px;
+max-width:700px;
+}
+
+.songItem{
+height:55px;
+display:flex;
+background-color:white;
+color:black;
+margin:12px 0;
+justify-content:space-between;
+align-items:center;
+border-radius:34px;
+padding-right:5px;
+transition:0.2s;
+}
+
+.songItem:hover{
+transform:scale(1.02);
+background-color:#f0f0f0;
+}
+
+.songItem img{
+width:43px;
+height:43px;
+object-fit:cover;
+margin:0 15px;
+border-radius:50%;
+}
+
+.songName{
+flex:1;
+font-size:14px;
+padding-right:10px;
+}
+
+.songlistplay{
+display:flex;
+align-items:center;
+}
+
+.timestamp{
+margin:0 15px;
+white-space:nowrap;
+}
+
+.songItemPlay{
+cursor:pointer;
+font-size:20px;
+margin-left:8px;
+transition:0.2s;
+}
+
+.songItemPlay:hover{
+color:#1db954;
+transform:scale(1.15);
+}
+
+
+.bottom{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+min-height:140px;
+background-color:black;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+z-index:1000;
+padding:15px 0;
+}
+
+#myProgressBar{
+width:80%;
+cursor:pointer;
+accent-color:#1db954;
+margin-bottom:12px;
+}
+
+.icons{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:30px;
+margin-top:5px;
+z-index:10;
+}
+
+.icons i{
+cursor:pointer;
+color:white;
+display:inline-block;
+font-size:28px;
+transition:all 0.2s ease;
+}
+
+.icons i:hover{
+color:#1db954;
+transform:scale(1.15);
+}
+
+#masterPlay{
+font-size:42px;
+}
+
+.songInfo{
+position:absolute;
+left:10%;
+bottom:20px;
+display:flex;
+align-items:center;
+font-family:'Varela Round',sans-serif;
+max-width:300px;
+}
+
+.songInfo img{
+opacity:0;
+transition:opacity 0.4s ease-in;
+margin-right:8px;
+}
+
+#masterSongName{
+font-size:13px;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+
+@media only screen and (max-width:1100px){
+.container{
+width:70%;
+margin-left:5%;
+margin-right:auto;
+background:rgba(0,0,0,0.75);
+border-radius:15px;
+}
+.songBanner{
+display:none;
+}
+.songList{
+width:100%;
+}
+.songItem{
+height:50px;
+}
+.songName{
+font-size:12px;
+}
+.timestamp{
+font-size:11px;
+margin:0 10px;
+}
+#myProgressBar{
+width:90%;
+}
+.songInfo{
+left:5%;
+bottom:12px;
+max-width:200px;
+}
+}
+
+@media only screen and (max-width:600px){
+nav ul{
+padding-left:5px;
+}
+nav ul li{
+padding:0 7px;
+}
+.brand{
+font-size:1rem;
+}
+.container{
+width:95%;
+padding:15px;
+margin-top:15px;
+}
+.songList h1{
+font-size:20px;
+}
+.songItem{
+height:48px;
+}
+.songItem img{
+width:35px;
+height:35px;
+margin:0 10px;
+}
+.songName{
+font-size:10px;
+}
+.timestamp{
+font-size:10px;
+margin:0 6px;
+}
+.songItemPlay{
+font-size:16px;
+}
+.icons{
+gap:22px;
+}
+.icons i{
+font-size:23px;
+}
+#masterPlay{
+font-size:35px;
+}
+.songInfo{
+display:none;
+}
+}
